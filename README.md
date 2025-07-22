@@ -1,3 +1,9 @@
+
+
+I have Created 2 Api according to the documentation and I used Prisma for it. ihave attached the screenshort<img width="1481" height="384" alt="Screenshot 2025-07-23 at 3 27 20 AM" src="https://github.com/user-attachments/assets/d359b6c8-8091-4e83-b458-c5040b8f7e97" />
+
+---------------------------------------------- Start Section ------------------------------------------------------------
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

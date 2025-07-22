@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.titleIcon {
+  color: #c20000;
+  font-size: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.controlIcon {
+  color: #bd5c50;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.resolvedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #151b17;
+ 
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.resolvedIcon {
+  font-size: 1rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #333;
+}
+
+.thumb {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.badgeText {
+  font-size: 1rem;
+  color: inherit;
+}
+
+.resolve {
+  background: none;
+  border: none;
+  color: #e6d500;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.resolve:hover {
+  text-decoration: underline;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.metaIcon {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.message {
+  color: #888;
+  text-align: center;
+  padding: 24px;
+}

@@ -1,0 +1,72 @@
+.playerContainer {
+  position: relative;
+  background: #2a2a2a;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.mainFrame {
+  position: relative;
+  background: #000;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.videoStub {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.activeLabel {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.thumbStrip {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.thumbWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.thumbWrapper.selected {
+  border: 2px solid #fff;
+}
+
+.thumb {
+  width: 80px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.thumbLabel {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+}

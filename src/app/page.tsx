@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import IncidentPlayer from "@/components/IncidentPlayer";
 import IncidentList from "@/components/IncidentList";
 import IncidentTimeline, { Incident } from "@/components/IncidentTimeline";
@@ -19,6 +19,12 @@ export default function HomePage() {
   const [time, setTime] = useState(0);
   const [incidents, setIncidents] = useState<Incident[]>([]);
   const [loading, setLoading] = useState(true);
+  const currentTimeDate = useMemo(() => {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    d.setMilliseconds(time * 1000);
+    return d;
+  }, [time]);
 
   useEffect(() => {
     fetch("/api/incidents?resolved=false")
@@ -137,6 +143,7 @@ export default function HomePage() {
             const secs = d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();
             if (videoRef.current) videoRef.current.currentTime = secs;
           }}
+          currentTime={currentTimeDate} 
         />
       </div>
     </div>

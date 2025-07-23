@@ -88,7 +88,6 @@ export default function IncidentList() {
 
   return (
     <div className={styles.wrapper}>
-
       <div className={styles.header}>
         <h2 className={styles.title}>
           <FiAlertTriangle className={styles.titleIcon} />
@@ -104,7 +103,6 @@ export default function IncidentList() {
         </div>
       </div>
 
-   
       <ul className={styles.list}>
         {incidents.map((inc) => {
           const { icon, bg, fg } = TYPE_MAP[inc.type] || {
@@ -112,10 +110,13 @@ export default function IncidentList() {
             bg: "#333",
             fg: "#888",
           };
+         
+          const filename = inc.thumbnailUrl.split("/").pop() || inc.thumbnailUrl;
+
           return (
             <li key={inc.id} className={styles.item}>
               <img
-                src={`/thumbnails/${inc.thumbnailUrl}`}
+                src={`/thumbnails/${filename}`}
                 alt={inc.type}
                 className={styles.thumb}
               />

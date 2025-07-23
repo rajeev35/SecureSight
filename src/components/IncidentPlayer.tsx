@@ -30,6 +30,7 @@ export default function IncidentPlayer({ videoRef }: IncidentPlayerProps) {
           playsInline
         />
         <div className={styles.activeLabel}>
+            <span className={styles.recordDot} />
           {selected.label}
         </div>
       </div>

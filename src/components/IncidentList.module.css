@@ -54,9 +54,9 @@
 
 .item {
   display: flex;
-  gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid #333;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: none;
 }
 
 .thumb {

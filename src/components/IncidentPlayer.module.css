@@ -33,8 +33,17 @@
   color: #fff;
   font-size: 0.875rem;
   font-weight: bold;
+  display: inline-flex;
+  align-items: center;
 }
-
+.recordDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
 .thumbStrip {
   position: absolute;
   bottom: 16px;

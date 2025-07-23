@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState, useEffect, useMemo } from "react";
+import React, { useRef, useState, useEffect, useMemo, ReactNode } from "react";
 import {
   FiShieldOff,
   FiAlertCircle,
@@ -22,12 +22,13 @@ interface TimelineProps {
   currentTime: Date; 
 }
 
-const TYPE_MAP: Record<string, { icon: JSX.Element; fg: string }> = {
+const TYPE_MAP: Record<string, { icon: ReactNode; fg: string }> = {
   "Unauthorised Access": { icon: <FiShieldOff />, fg: "#E65C00" },
   "Gun Threat":          { icon: <FiAlertCircle />, fg: "#C20000" },
   "Face Recognised":     { icon: <FiUser />,        fg: "#0066CC" },
   "Traffic Congestion":  { icon: <FiCamIcon />,     fg: "#00A3C4" },
 };
+
 
 export default function IncidentTimeline({
   incidents,

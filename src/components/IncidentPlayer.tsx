@@ -4,7 +4,7 @@ import React, { RefObject, useState } from "react";
 import styles from "./IncidentPlayer.module.css";
 
 interface IncidentPlayerProps {
-  videoRef: RefObject<HTMLVideoElement>;
+  videoRef: RefObject<HTMLVideoElement | null>;
 }
 
 export default function IncidentPlayer({ videoRef }: IncidentPlayerProps) {

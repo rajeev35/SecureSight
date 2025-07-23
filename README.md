@@ -1,11 +1,12 @@
-
+<img width="1792" height="996" alt="Screenshot 2025-07-23 at 4 11 18 PM" src="https://github.com/user-attachments/assets/a0ce255f-5594-4a42-aef4-2bf20943f364" />
 
 I have Created 2 Api according to the documentation and I used Prisma for it. ihave attached the screenshort<img width="1481" height="384" alt="Screenshot 2025-07-23 at 3 27 20 AM" src="https://github.com/user-attachments/assets/d359b6c8-8091-4e83-b458-c5040b8f7e97" />
 
 
-........................................ frontend part something looks like it as simmelr to figma.........................
 
-![Uploading Screenshot 2025-07-23 at 4.11.18 PM.png…]()
+
+
+
 
 
 ---------------------------------------------- Start Section ------------------------------------------------------------
@@ -30,7 +31,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/<img width="1790" height="996" alt="Screenshot 2025-07-23 at 4 17 03 PM" src="https://github.com/user-attachments/assets/2109a022-5927-47b4-ba70-451ae33cb727" />
+font), a new font family for Vercel.
 
 ## Learn More
 
